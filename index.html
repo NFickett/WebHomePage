@@ -23,6 +23,8 @@
                   Map Mania V1</a><li>
                 <li><a href="https://map-mania-v2-nf.azurewebsites.net/">
                   Map Mania V2</a><li>
+                <li><a href="https://hosting-json-in-azure-nf.azurewebsites.net">
+                    Mustang V1</a></li>
             </ul>
         </div>
         <div class="infoCol">
@@ -37,13 +39,37 @@
         <div class="middleFrame">
             <form>
                 <select id="assignment" name="assignment">
-                    <option></option>
+                    <option>Getting to Know Each Other</option>
+                    <option>Dice Roller</option>
+                    <option>Google Maps Hello World</option>
+                    <option>Map Mania V1</option>
+                    <option>Map Mania V2</option>
+                    <option>Mustang V1</option>
                 </select>
             </form>
-            <iframe src="https://gettingtoknow-nf.azurewebsites.net/"></iframe>
+            <button type="button" onclick = "selectFile()">Select</button>
+            <iframe id="myFrame", src="https://gettingtoknow-nf.azurewebsites.net/"></iframe>
         </div>
     </div>
 </body>
+<script>
+    function selectFile(){
+        var option = document.getElementById("assignment").value;
+        if (option == "Getting to Know Each Other"){
+        document.getElementById("myFrame").src = "https://gettingtoknow-nf.azurewebsites.net";
+        }else if(option == "Dice Roller"){
+            document.getElementById("myFrame").src = "https://dice-roller-web-nf.azurewebsites.net";
+        }else if(option == "Google Maps Hello World"){
+            document.getElementById("myFrame").src = "https://google-maps-hello-world-nf.azurewebsites.net";
+        }else if(option == "Map Mania V1"){
+            document.getElementById("myFrame").src = "https://map-mania-v1-nf.azurewebsites.net/";
+        }else if(option == "Map Mania V2"){
+            document.getElementById("myFrame").src = "https://map-mania-v2-nf.azurewebsites.net/";
+        }else if(option == "Mustang V1"){
+            document.getElementById("myFrame").src = "https://hosting-json-in-azure-nf.azurewebsites.net";
+        }
+    }
+</script>
 
 
 </html>
