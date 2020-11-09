@@ -24,9 +24,11 @@
                 <li><a href="https://map-mania-v2-nf.azurewebsites.net/">
                   Map Mania V2</a><li>
                 <li><a href="https://hosting-json-in-azure-nf.azurewebsites.net">
-                    Mustang V1</a></li>
+                    Hosted JSON Files</a></li>
                 <li><a href="https://ajax-json-tutorial-nf.azurewebsites.net/">
                     JSON AJAX tutorial</a></li>
+               <li><a href="https://mustang-v1-nf.azurewebsites.net/">
+                    Mustang-v1</a></li>
             </ul>
         </div>
         <div class="infoCol">
@@ -48,6 +50,7 @@
                     <option>Map Mania V2</option>
                     <option>Mustang V1</option>
                     <option>JSON AJAX</option>
+                    <option>Hosted JSON Files</option>
                 </select>
             </form>
             <button type="button" onclick = "selectFile()">Select</button>
@@ -68,11 +71,12 @@
             document.getElementById("myFrame").src = "https://map-mania-v1-nf.azurewebsites.net/";
         }else if(option == "Map Mania V2"){
             document.getElementById("myFrame").src = "https://map-mania-v2-nf.azurewebsites.net/";
-        }else if(option == "Mustang V1"){
+        }else if(option == "Hosted JSON Files"){
             document.getElementById("myFrame").src = "https://hosting-json-in-azure-nf.azurewebsites.net";
         }else if(option == "JSON AJAX"){
             document.getElementById("myFrame").src = "https://ajax-json-tutorial-nf.azurewebsites.net/";
-        }
+        }else if(option == "Mustang V1"){
+            document.getElementById("myFrame").src = "https://mustang-v1-nf.azurewebsites.net/";
     }
 </script>
 
